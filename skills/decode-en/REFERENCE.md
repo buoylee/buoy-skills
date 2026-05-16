@@ -53,6 +53,21 @@
 
 `in terms of`（就⋯⋯而言）、`as well as`（以及）、`on the other hand`（另一方面）、`when it comes to`（談到、說到）、`a wide variety of`（各式各樣的）。
 
+## 6. 功能詞的非字面用法（function words）
+
+`where / that / which / it / as / there` 這類小字，常常**不照字面**用。使用者認得字，卻不懂它在句中的作用——這也是「組合後看不懂」。
+
+| 字 | 非字面用法 | 例 |
+|---|---|---|
+| where | 指抽象的「環節 / 點 / 情況」，不是地方 | `this is where I disagree`（我就是在這點上不同意） |
+| that | 引導子句的「連接詞」，本身無意義，常可省略 | `the book that I read`（我讀的那本書） |
+| which | 補充說明前面整件事 | `he was late, which annoyed me`（他遲到，這件事惹惱了我） |
+| it | 虛主詞 / 虛受詞，佔位用，不指任何東西 | `it is hard to say`（很難說）；`it` 不翻 |
+| as | 「作為 / 隨著 / 因為 / 就如」多義 | `as we grow`（隨著我們成長） |
+| there | `there is/are` 的 there 是「存在」句型，不是「那裡」 | `there is a problem`（有個問題） |
+
+判斷訣竅：**這個小字照字面套不進去** → 它八成是某個句型結構的一部分，要連結構一起解釋。
+
 ## 常見「切錯」陷阱
 
 使用者把 `a b c` 誤切成 `a b` + `c`，通常因為沒認出 `b c` 是一塊。檢查順序：

@@ -6,7 +6,7 @@
 
 | Skill | 用途 |
 |---|---|
-| [english-sentence-decoder](skills/english-sentence-decoder/) | 拆解英文句子：切分短語、解釋英文邏輯、給中文對照，幫中文母語學習者真正讀懂組合後的意思 |
+| [decode-en](skills/decode-en/) | 拆解英文句子：切分短語、解釋英文邏輯（含功能詞的非字面用法）、給中文對照，幫中文母語學習者真正讀懂組合後的意思 |
 
 ## 安裝
 
@@ -17,7 +17,7 @@
 npx skills add buoylee/buoy-skills --list
 
 # 安裝指定 skill
-npx skills add buoylee/buoy-skills --skill english-sentence-decoder
+npx skills add buoylee/buoy-skills --skill decode-en
 ```
 
 或手動：把 `skills/<名稱>/` 複製或符號連結到 `~/.claude/skills/<名稱>`。

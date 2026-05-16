@@ -1,6 +1,6 @@
 ---
-name: english-sentence-decoder
-description: Decode English words, phrases, and sentences for a Chinese-speaking learner by chunking them into meaningful units and explaining the English logic before giving Chinese glosses. Use when the user pastes English text and asks what it means, says 看不懂/什麼意思/這句怎麼理解/怎麼拆, asks for translation or phrase explanation, or is confused about how known words combine into an unclear phrase.
+name: decode-en
+description: Decode English words, phrases, and sentences for a Chinese-speaking learner by chunking them into meaningful units and explaining the English logic (including function words used non-literally) before giving Chinese glosses. Use when the user pastes English text and asks what it means, says 看不懂/什麼意思/這句怎麼理解/怎麼拆, asks for translation or phrase/grammar explanation, or is confused about how known words combine into an unclear phrase.
 ---
 
 # English Sentence Decoder
@@ -13,6 +13,7 @@ description: Decode English words, phrases, and sentences for a Chinese-speaking
 2. **不要只丟道地中文翻譯。** 必須點出英文是怎麼組合的，但用最短的話。
 3. **先切分，再解釋。** 大多數看不懂是切錯邊界。永遠先切 chunk。
 4. **只標關鍵防呆。** 只標**最容易切錯的那一處**，一句註解。不要逐個 chunk 都警告。
+5. **功能詞別放過。** 功能詞（`where / that / which / it / as / there`…）被**非字面**使用時（如 `this is where…` 的 `where` 不指地點），把它連同所在結構當成一個 chunk，明確解釋它在句中的作用。
 
 ## 固定輸出格式
 
@@ -20,7 +21,7 @@ description: Decode English words, phrases, and sentences for a Chinese-speaking
 
 1. **切分行**：原句用 `/` 分隔 chunk，一行。下面最多一句 ⚠️ 註解（標最容易切錯處）。
 2. **逐塊條列**：每個 chunk 一行，格式 `· chunk〔類型＋為什麼一塊〕中文`
-   - 〔〕內**只寫一句**：什麼類型（片語動詞 / 量詞框架 / 複合名詞 / 慣用語…）+ 為什麼當一塊。
+   - 〔〕內**只寫一句**：什麼類型（片語動詞 / 量詞框架 / 複合名詞 / 慣用語 / 功能詞結構…）+ 為什麼當一塊。
    - 簡單到不會誤解的 chunk（如 `industries`），〔〕內直接寫類型即可（如「名詞」）。
    - 不用表格、不寫表頭。
 3. **整句**，四行，標題統一兩字：
